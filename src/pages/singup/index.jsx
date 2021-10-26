@@ -41,6 +41,7 @@ const Singup = () => {
             setMsg(result.message)
             return
         }
+        setLoading(false)
         history.push('/login')
     }
     return (
