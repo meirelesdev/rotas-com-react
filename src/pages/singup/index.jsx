@@ -2,10 +2,11 @@ import { http } from '../../services/functions'
 import { useState } from "react"
 import { useHistory } from 'react-router'
 import { Link } from 'react-router-dom'
+import InputField from '../../components/InputField'
 
 const Singup = () => {
     const [user, setUser] = useState({ name: "", email: "", password: "" })
-    const [errors, setErrors] = useState({ name: false, email: false, password: false })
+    const [errors, setErrors] = useState({ name: "", email: "", password: "" })
     const [ msg, setMsg ] = useState("")
     const [ loading, setLoading ] = useState(false)
     const history = useHistory()
@@ -18,15 +19,19 @@ const Singup = () => {
     }
     const handleSingup = async () => {
         setLoading(true)
-        if (errors.name) {
+        console.log(errors)
+        if (!user.name) {
+            setErrors({...errors, name: true})
             setLoading(false)
             return  
         }
-        if (errors.email) {
+        if (!user.email) {
+            setErrors({...errors, email: true})
             setLoading(false)
             return  
         }
-        if (errors.password) {
+        if (!user.password) {
+            setErrors({...errors, password: true})
             setLoading(false)
             return  
         }
@@ -49,19 +54,34 @@ const Singup = () => {
             {loading && <div className="loading"><p>Aguarde...</p></div> }
             <h1>Cadastro de Usuario</h1>
             <div className="form-login">
-            {msg && <div className="msg"><p>{msg}</p></div>}     
-            <fieldset className={errors.name? "error": ""}>
-                    <legend>Usuario</legend>
-                    <input type="text" name="name" value={user.name} onChange={handleInputChange} placeholder="Digite seu nome" />
-                </fieldset>
-                <fieldset className={errors.email? "error": ""}>
-                    <legend>Email</legend>
-                    <input type="email" name="email" value={user.email} onChange={handleInputChange} placeholder="Digite seu e-mail" />
-                </fieldset>
-                <fieldset className={errors.password? "error": ""}>
-                    <legend>Senha</legend>
-                    <input type="password" name="password" value={user.password} onChange={handleInputChange} placeholder="Digite seu senha" />
-                </fieldset>
+                {msg && <div className="msg"><p>{msg}</p></div>}
+                <InputField
+                    error={errors.name}
+                    type="text"
+                    name="name"
+                    value={user.name}
+                    onChange={handleInputChange}
+                    placeholder="Digite seu nome..."
+                    title="Nome"
+                />
+                <InputField
+                    error={errors.email}
+                    type="email"
+                    name="email"
+                    value={user.email}
+                    onChange={handleInputChange}
+                    placeholder="Digite seu e-mail..."
+                    title="E-mail"
+                />
+                <InputField
+                    error={errors.password}
+                    type="password"
+                    name="password"
+                    value={user.password}
+                    onChange={handleInputChange}
+                    placeholder="Digite uma senha..."
+                    title="Senha"
+                />
                 <div className="buttons">
                     <button onClick={handleSingup}>Cadastrar</button>
                     <Link to="/login">
