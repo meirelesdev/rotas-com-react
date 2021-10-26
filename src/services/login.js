@@ -16,6 +16,7 @@ export const getToken = () => {
     return JSON.parse(localStorage.getItem('user')) || false
 }
 export const setToken = (user) => {
+    delete user.password
     localStorage.setItem('user',JSON.stringify(user))
 }
 export const logout = () => {

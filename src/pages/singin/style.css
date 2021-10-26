@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    color: antiquewhite;
+}
+.form-login {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-login fieldset{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    margin: 10px;
+}
+fieldset input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: antiquewhite;
+}
+fieldset.error{
+    border: 1px solid red;
+    color: red;
+}
+.buttons button {
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(61, 55, 141);
+    cursor: pointer;
+}
+.buttons button:last-of-type {
+    background-color: rgb(13, 94, 67);
+}
+.buttons button:hover {
+    background-color: rgb(51, 88, 88);
+    text-shadow: 0px 0px 3px black;
+}
+.loading {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(2, 2, 2, 0.295);
+}
+.loading p {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+.msg p{
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+
+}
+@media (max-width: 320px ){
+    .form-login fieldset{
+        width: 100%;
+    }
+}

@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Rotas e rotas Privadas com ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+Este projeto foi desenvolvido pra treinamento e desenvolvimento de habilidades ligas a rotas com react como parte de um exercício do curso DevinHouse.
 
-## Available Scripts
+- [Projeto Online Aqui](https://meirelesdev.github.io/rotas-com-react/)
+<p align="center">	
+   <a href="https://www.linkedin.com/in/developer-danielmn/">
+      <img alt="Daniel Meireles" src="https://img.shields.io/badge/-Daniel Meireles-0080000?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/languages/code-size/meirelesdev/rotas-com-react?color=0080000label=repo%20size">
 
-In the project directory, you can run:
 
-### `npm start`
+  <a href="https://github.com/meirelesdev/rotas-com-react/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/meirelesdev/rotas-com-react?color=0080000">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# :pushpin: Índice
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Sobre](#sobre)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Como Usar](#como-usar)
+- [Como Contribuir](#como-contribuir)
 
-### `npm test`
+<a id="sobre"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :bookmark: Sobre
 
-### `npm run build`
+A <strong>Turma teltec e BRy do Dev in House</strong> é uma turma que tem por objetivo aprender a desenvolvimento de software com a stack javascript e esta pronto para o mercado de trabalho em 9 meses.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a id="tecnologias-utilizadas"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :rocket: Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Os projetos aqui dispostos foram desenvolvidos utilizando as seguintes tecnologias:
 
-### `npm run eject`
+- [HTML](https://www.w3schools.com/html/default.asp)
+- [CSS](https://www.w3schools.com/css/default.asp)
+- [JAVASCRIPT](https://www.w3schools.com/js/default.asp)
+- [REACT](https://pt-br.reactjs.org/docs/getting-started.html)
+ 
+<a id="como-usar"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# :construction_worker: Como Usar
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Pré-requisitos**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - É **necessário** possuir um computador com internet máquina.
+  - Nos modulos mais avançados também, será **necessário** ter o **[NojeJS](https://nodejs.org/en/)** instalado de forma global na máquina.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Utilizando o terminal: Clone o Repositório
+$ git clone https://github.com/meirelesdev/rotas-com-react
+```
+### :right_anger_bubble: Executando os projetos
 
-## Learn More
+```bash
+# Entre na pasta projeto
+$ cd rotas-com-react
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Abra o seu editor de codigo, no exemplo usaremos o VScode
+$ code .
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Iniciando o Projeto
+$ npm install
 
-### Code Splitting
+# Rodando o projeto
+$ npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+### Informações Adicionais
+Se tiver duvida em como instalar alguma ferramenta, basta pesquisar no [Google](https://google.com).
 
-### Analyzing the Bundle Size
+<a id="como-contribuir"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## :recycle: Como contribuir
 
-### Making a Progressive Web App
+- Faça um Fork desse repositório,
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h4 align="center">
+    Feito com ❤️ by <a href="https://www.linkedin.com/in/developer-danielmn/" target="_blank">Daniel Meireles</a>
+</h4>

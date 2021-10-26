@@ -1,14 +1,10 @@
-import { useHistory, useParams, useLocation } from 'react-router-dom'
+import Header from '../../components/Header'
 
 const About = ()=>{
-    const history = useHistory()
-    // const { offset, limit } = useParams()
-    // const location = useLocation()
-
     return (
         <div>
-            <h1>About</h1>
-            <button type="button" onClick={()=> history.push('/')}>Ir para Home</button>
+        <Header />
+        <h1>Você esta na pagina Sobre</h1>
         </div>
     )
 }

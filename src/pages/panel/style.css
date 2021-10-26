@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+nav a, p {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: bisque;
+    cursor: pointer;
+}

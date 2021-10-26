@@ -1,16 +1,11 @@
-import { logout } from "../../services/login"
-import { useHistory } from 'react-router-dom'
+import './style.css'
+import Header from "../../components/Header"
 
 const Panel = () =>{
-    const history = useHistory()
-    const logoutUser = ()=>{
-        logout()
-        history.push('/')
-    }
     return (
         <div>
-            <button onClick={logoutUser}>Logout</button>
-            <h1>Você esta Logado</h1>
+            <Header />
+            <h1>Você esta na pagina Painel</h1>
         </div>
     )
 }

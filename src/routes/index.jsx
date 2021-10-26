@@ -8,16 +8,14 @@ import PrivateRoute from './PrivateRoute'
 import { getToken } from '../services/login'
 
 const Routes = ()=>{
-    const isAuthenticated = getToken()
-    console.log(isAuthenticated)
     return(
         <Router>
             <Switch>
                 <Route path="/login" component={Login} />
                 <Route path="/singup" component={Singup} />
-                <PrivateRoute exact path="/" isAuthenticated={isAuthenticated} component={Home} />
-                <PrivateRoute path="/painel" isAuthenticated={isAuthenticated} component={Panel} />
-                <PrivateRoute path="/sobre"  isAuthenticated={isAuthenticated} component={About} />
+                <PrivateRoute exact path="/" isAuthenticated={getToken} component={Home} />
+                <PrivateRoute path="/painel" isAuthenticated={getToken} component={Panel} />
+                <PrivateRoute path="/sobre"  isAuthenticated={getToken} component={About} />
                 <Route path="*" component={()=><h1>Pagina não encontrada</h1>} />
             </Switch>
         </Router>
