@@ -5,7 +5,7 @@ import Login from '../pages/singin'
 import Singup from '../pages/singup'
 import Panel from '../pages/panel'
 import PrivateRoute from './PrivateRoute'
-import { getToken } from '../services/login'
+import { getToken } from '../services/functions'
 
 const Routes = ()=>{
     return(

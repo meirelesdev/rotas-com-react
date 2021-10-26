@@ -5,7 +5,6 @@ export const http = async (dataUser, endpoint) => {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        mode: 'no-cors',
         method: "POST",
         body: JSON.stringify(dataUser)
     }

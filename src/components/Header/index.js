@@ -1,5 +1,5 @@
 import { Link, useHistory } from 'react-router-dom'
-import { logout } from '../../services/login'
+import { logout } from '../../services/functions'
 
 const Header = () => {
     const history = useHistory()

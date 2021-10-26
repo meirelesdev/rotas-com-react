@@ -1,4 +1,4 @@
-import { http, setToken } from '../../services/login'
+import { http, setToken } from '../../services/functions'
 import { useState } from "react"
 import { useHistory } from 'react-router-dom'
 import './style.css'

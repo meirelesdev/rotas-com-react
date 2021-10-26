@@ -3,7 +3,7 @@
 ---
 Este projeto foi desenvolvido pra treinamento e desenvolvimento de habilidades ligas a rotas com react como parte de um exercício do curso DevinHouse.
 
-- [Projeto Online Aqui](https://meirelesdev.github.io/rotas-com-react/)
+- [Projeto Online Aqui](https://routes-auth-react.netlify.app)
 <p align="center">	
    <a href="https://www.linkedin.com/in/developer-danielmn/">
       <img alt="Daniel Meireles" src="https://img.shields.io/badge/-Daniel Meireles-0080000?style=flat&logo=Linkedin&logoColor=white" />
