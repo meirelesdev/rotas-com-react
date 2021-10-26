@@ -7,7 +7,7 @@ const Singup = () => {
     const [user, setUser] = useState({ name: "", email: "", password: "" })
     const [errors, setErrors] = useState({ name: false, email: false, password: false })
     const [ msg, setMsg ] = useState("")
-    const [ loading, setLoagin ] = useState(false)
+    const [ loading, setLoading ] = useState(false)
     const history = useHistory()
 
     const handleInputChange = (e)=>{
@@ -17,27 +17,27 @@ const Singup = () => {
         if(value.length === 0) setErrors({...errors, [name]: true})
     }
     const handleSingup = async () => {
-        setLoagin(true)
+        setLoading(true)
         if (errors.name) {
-            setLoagin(false)
+            setLoading(false)
             return  
         }
         if (errors.email) {
-            setLoagin(false)
+            setLoading(false)
             return  
         }
         if (errors.password) {
-            setLoagin(false)
+            setLoading(false)
             return  
         }
         const result = await http(user, 'users')
         if (result.error) {
             alert(result.error)
-            setLoagin(false)
+            setLoading(false)
             return  
         }
         if (result.message) {
-            setLoagin(false)
+            setLoading(false)
             setMsg(result.message)
             return
         }
